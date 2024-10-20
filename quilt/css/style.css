@@ -14,22 +14,35 @@ html, body {
     grid-template-rows: repeat(5, 1fr);
     height: 100vh;
     width: 100vw;
+    gap: 5px;
 }
 
 .box {
     width: 100%;
     height: 100%;
-    background-color: lightblue;
     border: 1px solid white;
 }
 
-.box1 { background-color: #FF6F61; }
-.box2 { background-color: #6B5B95; }
-.box3 { background-color: #88B04B; }
-.box4 { background-color: #F7CAC9; }
-.box5 { background-color: #92A8D1; }
-.box6 { background-color: #955251; }
-.box7 { background-color: #B565A7; }
-.box8 { background-color: #009B77; }
-.box9 { background-color: #DD4124; }
-.box10 { background-color: #45B8AC; }
+.box1 {
+    background-color: #FF6F61;
+}
+
+.box2 {
+    background-color: #6B5B95;
+    opacity: 0.8;
+}
+
+.box3 {
+    background-color: #88B04B;
+    border-radius: 50%;
+}
+
+.box4 {
+    background-image: url('https://th.bing.com/th/id/R.f62a38e3ad9fb9eaee429638cb253263?rik=HyH%2b%2frhraKBJ%2bw&pid=ImgRaw&r=0');
+    background-size: cover;
+}
+
+.box5 {
+    background-color: #F7CAC9;
+    transform: rotate(15deg);
+}

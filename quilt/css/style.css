@@ -11,7 +11,7 @@ html, body {
 .container {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     height: 100vh;
     width: 100vw;
     gap: 5px;
@@ -25,24 +25,25 @@ html, body {
 
 .box1 {
     background-color: #FF6F61;
+    border-radius: 50%;
 }
 
 .box2 {
     background-color: #6B5B95;
-    opacity: 0.8;
+    transform: skew(10deg, 10deg);
 }
 
 .box3 {
     background-color: #88B04B;
-    border-radius: 50%;
+    height: 200%;
 }
 
 .box4 {
-    background-image: url('https://th.bing.com/th/id/R.f62a38e3ad9fb9eaee429638cb253263?rik=HyH%2b%2frhraKBJ%2bw&pid=ImgRaw&r=0');
-    background-size: cover;
+    background-color: #F7CAC9;
+    width: 200%;
 }
 
 .box5 {
-    background-color: #F7CAC9;
-    transform: rotate(15deg);
+    background-color: #92A8D1;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }

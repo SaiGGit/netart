@@ -21,16 +21,16 @@ html, body {
 .box {
     width: 100%;
     height: 100%;
-    border: 2px solid white; /* Optional: adds borders for a more distinct pattern */
+    border: 2px solid #420a0a; /* Optional: adds borders for a more distinct pattern */
 }
 
 /* Style the unique boxes with different colors and effects */
 .box1 {
-    background-color: #FF6F61;
+    background-color: #81170d;
 }
 
 .box2 {
-    background-color: #6B5B95;
+    background-color: #420ec9;
 }
 
 .box3 {
@@ -42,7 +42,7 @@ html, body {
 }
 
 .box5 {
-    background-color: #92A8D1;
+    background-color: #175de1;
 }
 
 .box6 {
@@ -50,11 +50,11 @@ html, body {
 }
 
 .box7 {
-    background-color: #B565A7;
+    background-color: #658cb5;
 }
 
 .box8 {
-    background-color: #009B77;
+    background-color: #92d212;
 }
 
 .box9 {
@@ -62,7 +62,7 @@ html, body {
 }
 
 .box10 {
-    background-color: #45B8AC;
+    background-color: #0edec8;
 }
 
 /* Extra styling for dynamic effects (e.g. opacity, scaling, etc.) */

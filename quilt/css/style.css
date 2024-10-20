@@ -10,39 +10,39 @@ html, body {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
     height: 100vh;
     width: 100vw;
-    gap: 0;
 }
 
 .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid white;
 }
 
 .box1 {
     background-color: #FF6F61;
-    border-radius: 10%;
+    border-radius: 50%;
 }
 
 .box2 {
     background-color: #6B5B95;
-    transform: rotate(10deg);
 }
 
 .box3 {
     background-color: #88B04B;
-    height: 100%;
+    height: 150%;
 }
 
 .box4 {
     background-color: #F7CAC9;
-    width: 100%;
-    transform: scale(1.1);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
 .box5 {
     background-color: #92A8D1;
-    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    height: 100%;
 }

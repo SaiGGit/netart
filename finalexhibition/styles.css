@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b1b;
+    color: #f4f4f4;
+}
+
+/* Marquee */
+.marquee {
+    background: #333;
+    color: #f4f4f4;
+    padding: 10px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.marquee p {
+    animation: scrollText 10s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Navigation */
+nav {
+    background: #444;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: url('img/hero.jpg') no-repeat center center/cover;
+    color: #f4f4f4;
+    padding: 50px 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Artworks */
+#artworks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.artwork {
+    background: #2c2c2c;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.artwork:hover {
+    transform: scale(1.05);
+}
+
+.artwork img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.view-button {
+    background: #f44336;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.view-button:hover {
+    background: #d32f2f;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #333;
+    color: #f4f4f4;
+    padding: 10px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+}

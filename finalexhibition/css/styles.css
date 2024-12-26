@@ -7,19 +7,6 @@ body {
     color: #f4f4f4;
 }
 
-.marquee {
-    background: #333;
-    color: #f4f4f4;
-    padding: 10px 0;
-    text-align: center;
-    overflow: hidden;
-}
-
-.marquee p {
-    animation: scrollText 10s linear infinite;
-    white-space: nowrap;
-}
-
 @keyframes scrollText {
     from {
         transform: translateX(100%);
@@ -29,31 +16,6 @@ body {
     }
 }
 
-nav {
-    background: #444;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    padding: 10px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #f4f4f4;
-    text-decoration: none;
-    font-weight: bold;
-}
 
 .hero {
     text-align: center;
@@ -66,11 +28,27 @@ main {
     padding: 20px;
 }
 
+.static-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: #333;
+    color: #f4f4f4;
+    padding: 20px 0;
+}
+
+#curatorial-text p {
+    font-size: 1.25rem;
+    /*line-height: 1.8;*/
+    margin-bottom: 15px;
+}
+
 #artworks {
     display: flex;
     overflow-x: auto;
-    gap: 20px;
-    padding: 10px 0;
+    gap: 15px;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
 }
 
 .artwork {
@@ -78,9 +56,11 @@ main {
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 15px;
-    max-width: 300px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    max-width: 250px;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     flex: 0 0 auto;
     scroll-snap-align: start;
     box-sizing: border-box;
@@ -88,6 +68,7 @@ main {
 
 .artwork:hover {
     transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 .artwork img {
@@ -95,8 +76,15 @@ main {
     border-radius: 5px;
 }
 
+#artworks {
+    margin: 0 auto;
+    max-width: 95vw;
+}
+
+
+
 .view-button {
-    background: #f44336;
+    background: #741b24;
     color: #fff;
     text-decoration: none;
     padding: 10px 15px;
